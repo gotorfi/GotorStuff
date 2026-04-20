@@ -1,0 +1,68 @@
+body { background-color: #000; color: white; font-family: sans-serif; }
+
+.game-carousel {
+  padding-top: 100px;
+  text-align: center;
+  max-width: 800px;
+  margin: 50px auto;
+}
+
+h2 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.carousel-main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.image-container {
+  width: 1200px;
+  border: 4px solid #333;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.image-container img {
+  width: 100%;
+  display: block;
+  transition: opacity 0.3s ease;
+}
+
+.arrow-btn {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 3rem;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.arrow-btn:hover { transform: scale(1.2); }
+
+/* Navigointipallot */
+.dot-container { margin-top: 20px; }
+
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 5px;
+  background-color: transparent;
+  border: 2px solid white;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.dot.active {
+  background-color: white;
+}
+
+
+.image-container:hover {
+    transform: scale(1.15);
+    filter: invert(21%) sepia(1%) saturate(74%) hue-rotate(359deg) brightness(154%) contrast(117%) drop-shadow(0 0 20px rgb(190, 211, 255));
+}
