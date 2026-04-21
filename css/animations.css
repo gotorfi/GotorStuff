@@ -11,12 +11,12 @@
     }
 }
 
-.section1, .section2, .hero h1, .game-carousel {
+.section1, .section2, .section3, .hero h1, .hero h2, .game-carousel {
     opacity: 0;
     transform: translateY(50px);
     transition: opacity 0.5s ease-out, transform 0.5s ease-out;
 }
 
-.section1.show, .section2.show, .hero h1.show, .game-carousel.show {
+.section1.show, .section2.show, .section3.show, .hero h1.show, .hero h2.show, .game-carousel.show {
     animation: fadeInUp 0.8s ease-out forwards;
 }

@@ -11,6 +11,6 @@ document.addEventListener("DOMContentLoaded", () => {
         threshold: 0.1
     });
 
-    const hiddenElements = document.querySelectorAll('.section1, .section2, .hero h1, .game-carousel');
+    const hiddenElements = document.querySelectorAll('.section1, .section2, .section3, .hero h1, .hero h2, .game-carousel');
     hiddenElements.forEach((el) => observer.observe(el));
 });
