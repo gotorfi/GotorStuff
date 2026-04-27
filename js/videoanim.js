@@ -22,7 +22,6 @@ const observer = new IntersectionObserver((entries) => {
 
 sections.forEach(section => observer.observe(section));
 
-/* varmistaa autoplayn joissain selaimissa */
 document.addEventListener("click", () => {
     videos.forEach(v => v.play());
 });

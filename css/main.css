@@ -13,6 +13,17 @@ body {
     align-items: center;
 }
 
+.hero2 {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .background-video {
     position: fixed;
     top: 0;
@@ -89,6 +100,33 @@ body {
     text-decoration: none;
 }
 
+
+.header2icon {
+    width: 105px;
+    margin-bottom: 10px;
+}
+
+.hero2 h1 {
+    margin: 0;
+    color: rgb(255, 255, 255);
+    font-family: oswald, sans-serif;
+    font-size: 120px;
+    line-height: 0.8;
+    text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.733);
+}
+.hero2 h2 {
+    margin: 0;
+    color: rgb(156, 148, 190);
+    font-family: oswald, sans-serif;
+    font-size: 30px;
+    line-height: 0.8;
+    padding-top: 50px;
+    text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.733);
+}
+.hero2 a {
+    text-decoration: none;
+}
+
 .content {
     position: relative;
     z-index: 2;
@@ -97,6 +135,22 @@ body {
     align-items: center;
     transform: translateY(-50px);
     transition: transform 0.3s ease;
+}
+
+
+.content2 {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translateY(-50px);
+    transition: transform 0.3s ease;
+}
+
+.content2:hover {
+    transform: translateY(-50px) scale(1.15);
+    filter: invert(21%) sepia(1%) saturate(74%) hue-rotate(359deg) brightness(154%) contrast(117%) drop-shadow(0 0 20px rgb(194, 190, 255));
 }
 
 .content:hover {
