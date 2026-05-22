@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GotorFI's stuff</title>
+    <link rel="icon" type="image/png" href="imgs/Gotor.png">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/sections.css">
+    <link rel="stylesheet" href="css/carousel.css">
+    <link rel="stylesheet" href="css/buttons.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet'>
+
+</head>
+<body>
+    
+    <video autoplay loop muted class="background-video">
+        <source src="videos/earth.mp4" type="video/mp4">
+    </video>
+    <div>
+        <div class="hero">
+            
+            <div class="menu">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="projects.html">Projects</a>
+                <a href="skills.html">Skills</a>
+                <a href="work.html">Work</a>
+                <a href="roblox.html">Roblox</a>
+
+            </div>
+            <div class="content">
+                <img src="imgs/lua.png" alt="Logo" class="headericon">
+                <a href="roblox.html"><h1>Roblox</h1></a>
+                <h2>-- Script Workspace --</h2>
+            </div>
+        </div>
+
+
+
+        <div class="image-showcase">
+
+            <div class="fadeleft showcase-card">
+
+                <div class="media-container">
+
+                    <img src="scripts/AnimationService.png"
+                        class="hover showcase-media active-media">
+
+                    <video class="showcase-media hover"
+                        muted
+                        loop
+                        autoplay
+                        playsinline>
+                        <source src="scripts/AnimationService.mp4" type="video/mp4">
+                    </video>
+
+                </div>
+
+                <div class="media-buttons">
+                    <img src="imgs/image.png"
+                        class="media-icon"
+                        onclick="showImage(this)">
+
+                    <img src="imgs/video.png"
+                        class="media-icon"
+                        onclick="showVideo(this)">
+                </div>
+
+                <h2>Animation Service</h2>
+
+                <p class="showcase-text">
+                    The purpose of the AnimationService module is to manage animations and allow any animation to be stopped from anywhere in the game. It can also prevent the 255 AnimationTrack limit because the module manages and removes old animations automatically.
+                </p>
+
+            </div>
+
+            <div class="faderight showcase-card">
+
+                <div class="media-container">
+
+                    <img src="scripts/datastore.png"
+                        class="hover showcase-media active-media">
+
+                </div>
+
+                <div class="media-buttons">
+                    <img src="imgs/image.png"
+                        class="media-icon"
+                        onclick="showImage(this)">
+                </div>
+
+                <h2>DataStore Service</h2>
+
+                <p class="showcase-text">
+                    Here are two different datastore systems. The one on the left is a mix of an older and newer coding style. Nowadays I mainly use tables instead of storing values inside IntValue objects. In some cases IntValues can still be useful, like in this example, but I personally prefer keeping most of the data directly inside the datastore rather than distributing it into IntValue instances.
+                </p>
+
+            </div>
+
+            <div class="fadeleft showcase-card">
+
+                <div class="media-container">
+
+                    <img src="scripts/firstperson.png"
+                        class="hover showcase-media active-media">
+
+                    <video class="showcase-media hover"
+                        muted
+                        loop
+                        autoplay
+                        playsinline>
+                        <source src="scripts/firstperson.mp4" type="video/mp4">
+                    </video>
+
+                </div>
+
+                <div class="media-buttons">
+                    <img src="imgs/image.png"
+                        class="media-icon"
+                        onclick="showImage(this)">
+
+                    <img src="imgs/video.png"
+                        class="media-icon"
+                        onclick="showVideo(this)">
+                </div>
+
+                <h2>Smooth First-Person Camera</h2>
+
+                <p class="showcase-text">
+                    This First Person Camera system was made for the Rojam 2026 game project. The system is short and clean, and all settings are placed at the top of the script to make value adjustments easy. The camera system also includes a RayCast system that prevents the camera from clipping through walls.
+                </p>
+
+            </div>
+
+            <div class="faderight showcase-card">
+
+                <div class="media-container">
+
+                    <img src="scripts/shopservice.png"
+                        class="hover showcase-media active-media">
+
+
+                </div>
+
+                <div class="media-buttons">
+                    <img src="imgs/image.png"
+                        class="media-icon"
+                        onclick="showImage(this)">
+
+                </div>
+
+                <h2>ShopService (Backend)</h2>
+
+                <p class="showcase-text">
+                    ShopServiceScript was created for my game RUINED.. Its purpose is to manage the entire shop rotation and maintain shop offers dynamically. The script collects data from modules and decides how the offers should behave. This is the backend code for the shop system in RUINED.
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+
+    </div>
+
+    <footer class="main-footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="imgs/Gotor.png" alt="Logo">
+            </div>
+
+            <div class="footer-contacts">
+                <a href="https://discordapp.com/users/1117432537220923452" target="_blank"><img src="imgs/Discord.png" alt="DC" width="50px" class="hover"></a>
+                <a href="https://www.youtube.com/@GotorFI" target="_blank"><img src="imgs/Youtube.png" alt="YT" width="50px" class="hover"></a>
+                <a href="https://www.instagram.com/gotorfi/" target="_blank"><img src="imgs/Instagram.png" alt="IG" width="50px" class="hover"></a>
+                <a href="https://twitter.com/GotorFI" target="_blank"><img src="imgs/X.png" alt="TW" width="50px" class="hover"></a>
+            </div>
+
+            <div class="footer-email">
+                <a href="mailto:cshroomushstudios@gmail.com" class="hover">ShrooMush Studios email</a>
+            </div>
+
+            <div class="footer-copyright">
+                <p>&copy; 2026 GotorFI. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/carousel.js"></script>
+    <script src="js/animations.js"></script>
+    
+</body>
+</html>
