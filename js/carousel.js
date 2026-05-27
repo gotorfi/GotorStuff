@@ -1,7 +1,7 @@
 const data = [
-  { title: "RUINED.", img: "/imgs/thumb3.png", info: "RUINED. is a horror game created by GotorFI and produced by GotorFI's company, ShrooMush Studios. RUINED. was released in 2026 on the Roblox platform." },
-  { title: "BaldJumper", img: "/imgs/baldjumper.png", info: "Bald Jumper is a platformer game created by GotorFI using Python and Pygame, where the goal is to complete levels. The game was made as an exercise, which is why it is not available." },
-  { title: "Extreme Sauna Simulator", img: "/imgs/sauna.png", info: "Extreme Sauna Simulator is a Roblox simulator game created by GotorFI. The game is about experiencing the ultimate sauna adventure." }
+  { title: "RUINED.", img: "imgs/thumb3.png", info: "RUINED. is a horror game created by GotorFI and produced by GotorFI's company, ShrooMush Studios. RUINED. was released in 2026 on the Roblox platform." },
+  { title: "BaldJumper", img: "imgs/baldjumper.png", info: "Bald Jumper is a platformer game created by GotorFI using Python and Pygame, where the goal is to complete levels. The game was made as an exercise, which is why it is not available." },
+  { title: "Extreme Sauna Simulator", img: "imgs/sauna.png", info: "Extreme Sauna Simulator is a Roblox simulator game created by GotorFI. The game is about experiencing the ultimate sauna adventure." }
 ];
 
 let index = 0;

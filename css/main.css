@@ -2,6 +2,28 @@ body {
     margin: 0;
 }
 
+.background-vid {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 200vh; /* Pitää videon tarpeeksi suurena laajakuvalla */
+
+    object-fit: cover;
+    
+    /* RATKAISU: Pakottaa videon alkamaan aivan elementin yläreunasta */
+    object-position: center top; 
+
+    z-index: -10;
+    pointer-events: none;
+    filter: brightness(50%) contrast(140%) grayscale(0%) blur(6px);
+    
+    transform: translateY(0%); 
+    will-change: transform;
+}
+
+
+
 .hero {
     width: 100%;
     height: 100vh;
