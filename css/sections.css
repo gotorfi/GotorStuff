@@ -7,7 +7,7 @@ p {
 
 .section1 {
     width: 100%;
-    height: 120vh;
+    min-height: 120vh;
     position: relative;
     overflow: hidden;
 
@@ -34,7 +34,7 @@ p {
 
 .section2 {
     width: 100%;
-    height: 200px;
+    min-height: 200px;
     position: relative;
     overflow: hidden;
     display: flex;
@@ -61,7 +61,7 @@ p {
 
 .section3 {
     width: 100%;
-    height: 1600px;
+    min-height: 1600px;
     position: relative;
     overflow: hidden;
     display: flex;
@@ -105,7 +105,7 @@ p {
 
 .section4 {
     width: 100%;
-    height: 80vh;
+    min-height: 80vh;
     position: relative;
     overflow: hidden;
 
@@ -300,4 +300,356 @@ p {
     width: 100%;
     height: 100%;
     border: none;
+}
+
+
+/* SECTION */
+
+.features-section {
+    width: 100%;
+    padding: 120px 0;
+    overflow: hidden;
+    position: relative;
+}
+
+.top {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.badge {
+    display: inline-block;
+
+    padding: 8px 18px;
+
+    border-radius: 999px;
+
+    background: rgba(255,255,255,0.06);
+
+    border: 1px solid rgba(255,255,255,0.08);
+
+    color: rgba(255,255,255,0.8);
+
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.top h2 {
+    margin-top: 22px;
+
+    font-size: 64px;
+    font-weight: 700;
+}
+
+/* CAROUSEL */
+
+.carousel2 {
+    width: 100%;
+    overflow: hidden;
+}
+
+.track {
+    display: flex;
+    gap: 24px;
+
+    width: max-content;
+
+    animation: scroll 40s linear infinite;
+}
+
+/* CARDS */
+
+.cardc {
+    position: relative;
+
+    width: 340px;
+    min-height: 250px;
+
+    padding: 30px;
+
+    border-radius: 32px;
+
+    background:
+        linear-gradient(
+            180deg,
+            rgba(255,255,255,0.08),
+            rgba(255,255,255,0.03)
+        );
+
+    border: 1px solid rgba(255,255,255,0.08);
+
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+
+    overflow: hidden;
+
+    flex-shrink: 0;
+
+    transition:
+        transform 0.4s ease,
+        border-color 0.4s ease,
+        box-shadow 0.4s ease;
+}
+
+.cardc:hover {
+    transform: translateY(-10px);
+
+    border-color: rgba(255,255,255,0.18);
+
+    box-shadow:
+        0 20px 50px rgba(0,0,0,0.4);
+}
+
+.cardc h3 {
+    font-size: 32px;
+    margin-bottom: 16px;
+    line-height: 1.1;
+
+    position: relative;
+    z-index: 5;
+}
+
+.cardc p {
+    opacity: 0.72;
+    line-height: 1.7;
+    font-size: 15px;
+
+    position: relative;
+    z-index: 5;
+}
+
+/* LARGE CARD */
+
+.largec {
+    width: 420px;
+}
+
+/* TAGS */
+
+.tagsc {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+
+    margin-top: 24px;
+
+    position: relative;
+    z-index: 5;
+}
+
+.tagsc span {
+    padding: 8px 14px;
+
+    border-radius: 12px;
+
+    background: rgba(255,255,255,0.08);
+
+    border: 1px solid rgba(255,255,255,0.06);
+
+    font-size: 13px;
+}
+
+/* GLOW */
+
+.glowc {
+    position: absolute;
+
+    width: 240px;
+    height: 240px;
+
+    background: #0066ff;
+
+    filter: blur(120px);
+
+    opacity: 0.25;
+
+    top: -100px;
+    right: -100px;
+
+    pointer-events: none;
+}
+
+/* STATUS */
+
+.statusc {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    margin-top: 25px;
+
+    font-size: 14px;
+
+    position: relative;
+    z-index: 5;
+}
+
+.dotc {
+    width: 10px;
+    height: 10px;
+
+    border-radius: 50%;
+
+    flex-shrink: 0;
+}
+
+/* ONLINE */
+
+.online .dotc {
+    background: #00ff88;
+
+    box-shadow:
+        0 0 10px #00ff88,
+        0 0 20px #00ff88;
+
+    animation: pulsec 1.5s infinite;
+}
+
+/* IDLE */
+
+.idle .dotc {
+    background: #ffaa00;
+
+    box-shadow:
+        0 0 10px #ffaa00,
+        0 0 20px #ffaa00;
+
+    animation: pulsec 1.5s infinite;
+}
+
+/* DND */
+
+.dnd .dotc {
+    background: #ff3b3b;
+
+    box-shadow:
+        0 0 10px #ff3b3b,
+        0 0 20px #ff3b3b;
+
+    animation: pulsec 1.5s infinite;
+}
+
+/* OFFLINE */
+
+.offline .dotc {
+    background: #777;
+
+    box-shadow:
+        0 0 8px rgba(255,255,255,0.15);
+}
+
+@keyframes pulsec {
+
+    0% {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    50% {
+        opacity: 0.5;
+        transform: scale(1.4);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* IMAGE CARD */
+
+.image-showcasec {
+    padding: 0;
+    overflow: hidden;
+}
+
+.image-showcasec img {
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    opacity: 0;
+
+    transition: opacity 1s ease;
+}
+
+.image-showcasec img.activec {
+    opacity: 1;
+}
+
+.overlayc {
+    position: absolute;
+    inset: 0;
+
+    background:
+        linear-gradient(
+            to top,
+            rgba(0,0,0,0.88),
+            rgba(0,0,0,0.3),
+            transparent
+        );
+
+    z-index: 2;
+}
+
+.image-textc {
+    position: absolute;
+
+    left: 28px;
+    bottom: 28px;
+
+    z-index: 3;
+}
+
+.image-textc h3 {
+    font-size: 34px;
+
+    text-shadow:
+        0 5px 20px rgba(0,0,0,0.9);
+}
+
+.image-textc p {
+    margin-top: 10px;
+
+    text-shadow:
+        0 5px 20px rgba(0,0,0,0.9);
+}
+.image-showcasec img.activec {
+    opacity: 1;
+}
+
+/* ANIMATION */
+
+@keyframes scroll {
+
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(calc(-50% - 12px));
+    }
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+    .top h2 {
+        font-size: 42px;
+    }
+
+    .cardc {
+        width: 300px;
+        min-height: 220px;
+    }
+
+    .largec {
+        width: 340px;
+    }
+
 }

@@ -29,3 +29,40 @@ function currentSlide(n) {
   index = n;
   updateCarousel();
 }
+
+
+
+const track = document.querySelector(".track");
+
+track.addEventListener("mouseenter", () => {
+    track.style.animationPlayState = "paused";
+});
+
+track.addEventListener("mouseleave", () => {
+    track.style.animationPlayState = "running";
+});
+
+
+const showcases = document.querySelectorAll(".image-showcasec");
+
+showcases.forEach(showcase => {
+
+    const images = showcase.querySelectorAll("img");
+
+    let current = 0;
+
+    setInterval(() => {
+
+        images[current].classList.remove("activec");
+
+        current++;
+
+        if(current >= images.length) {
+            current = 0;
+        }
+
+        images[current].classList.add("activec");
+
+    }, 5000);
+
+});
